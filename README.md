@@ -2,7 +2,7 @@
 
 This is a bare-bones, highly customizable UI component for interaction through focus-in and focus-out events. If the component is in the expanded state, a class named 'expanded' is added to it.
 
-##Usage
+#Usage
 ```
 {{#expander-on-focus}}
 
@@ -11,8 +11,15 @@ This is a bare-bones, highly customizable UI component for interaction through f
 {{/expander-on-focus}}
 ```
 
-##What it does:
+#What it does:
 * Clicking anywhere outside the component removes the class 'expanded', if it is present.
+
+* As a special case you can specify a class of an element outside the component which you can click to remove the 'expanded' class from the component. This way, the component will shrink only when you click on that element, not anywhere outside the component. Usage:
+```
+  {{#expander-on-focus focusOutTriggerClass="someClass"}}
+  ..... (your content) .....
+  {{/expander-on-focus}}
+```
 
 * Clicking within the component involves 2 cases:
 
@@ -28,12 +35,13 @@ This is a bare-bones, highly customizable UI component for interaction through f
 {{/expander-on-focus}}
 ```
 
-## Installation
-```
-ember install:addon ember-expand-on-focus
-```
+# Demo
+A live demo is at https://expand-on-focus-demo.herokuapp.com/ and its source is at https://github.com/shripathee/ember-expand-on-focus
+
+
 To try out the addon, clone the repository and run
 ```
 cd ember-expand-on-focus
+ember install
 ember server
 ```
