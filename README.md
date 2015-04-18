@@ -36,12 +36,4 @@ This is a bare-bones, highly customizable UI component for interaction through f
 ```
 
 # Demo
-A live demo is at https://expand-on-focus-demo.herokuapp.com/ and its source is at https://github.com/shripathee/ember-expand-on-focus
-
-
-To try out the addon, clone the repository and run
-```
-cd ember-expand-on-focus
-ember install
-ember server
-```
+A live demo is at https://expand-on-focus-demo.herokuapp.com/
