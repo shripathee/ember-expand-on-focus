@@ -1,0 +1,12 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.normal {
+  background-color: #DDD;
+}
+
+.expanded {
+  background-color: #DDD;
+  height: 300px;
+}

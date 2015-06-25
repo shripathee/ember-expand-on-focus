@@ -26,11 +26,11 @@ export default Ember.Component.extend({
     if(view && view.get('expanded')) {
       var focusOutTriggerClass = view.get('focusOutTriggerClass');
       if(focusOutTriggerClass) {
-        if ($(event.target).closest($('.' + focusOutTriggerClass)).length) {
+        if ($(event.target).closest($('.' + focusOutTriggerClass)).length) {      //Checking if the source of the event is an element inside the element having the given class
           view.set('expanded', false);
         }
       } else {
-        if (!$(event.target).closest(view.$()).length) {
+        if (!$(event.target).closest(view.$()).length) {      //Checking if the source of the event is not an element inside the component
           view.set('expanded', false);
         }
       }
