@@ -1,6 +1,6 @@
 {
   "name": "ember-expand-on-focus",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "A customizable UI element that expands on focus and contracts on losing focus",
   "directories": {
     "doc": "doc",
